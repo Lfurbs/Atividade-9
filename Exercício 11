@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+
+    float vetor[10];
+
+    printf("Informe 10 numeros:\n");
+    for (int i = 0; i < 10; i++) {
+        scanf("%f", &vetor[i]);
+    }
+
+    int quantiN = 0;
+    float somaPosi = 0;
+
+    for (int i = 0; i < 10; i++) {
+        if (vetor[i] < 0) {
+            quantiN++;
+        } else {
+            somaPosi += vetor[i];
+        }
+    }
+
+    printf("Quantidade de numeros negativos: %d\n", quantiN);
+    printf("Soma dos numeros positivos: %.2f\n", somaPosi);
+
+    return 0;
+}
