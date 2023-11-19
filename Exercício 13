@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+
+    float valores[5];
+
+    printf("Digite 5 valores:\n");
+    for (int i = 0; i < 5; i++) {
+        scanf("%f", &valores[i]);
+    }
+
+    float maior = valores[0];
+    float menor = valores[0];
+    int posicaoMa = 0;
+    int posicaoMe = 0;
+
+    for (int i = 1; i < 5; i++) {
+        if (valores[i] > maior) {
+            maior = valores[i];
+            posicaoMaior = i;
+        }
+        if (valores[i] < menor) {
+            menor = valores[i];
+            posicaoMenor = i;
+        }
+    }
+
+    printf("Posiçao do maior valor: %d\n", posicaoMa);
+    printf("Posicao do menor valor: %d\n", posicaoMe);
+
+    return 0;
+}
