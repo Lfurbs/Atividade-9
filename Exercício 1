@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+
+    int vetorA[6] = {1, 0, 5, -2, -5, 7};
+    int sumPosition = vetorA[0] + vetorA[1] + vetorA[5];
+
+    printf("A soma das posições A[0], A[1] e A[5] será: %d\n", sumPosition);
+
+    vetorA[4] = 100;
+
+    printf("Valores do vetor A:\n");
+    for (int i = 0; i < 6; i++) {
+        printf("%d\n", vetorA[i]);
+    }
+
+    return 0;
+}
