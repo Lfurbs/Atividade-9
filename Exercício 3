@@ -5,7 +5,7 @@ int main() {
     float vetorOG[10];
     float vetorQua[10];
 
-    printf("Digite 10 números reais:\n");
+    printf("Digite 10 numeros reais:\n");
     for (int i = 0; i < 10; i++) {
         scanf("%f", &vetorOG[i]);
     }
